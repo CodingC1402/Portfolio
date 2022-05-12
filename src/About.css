@@ -1,0 +1,57 @@
+.skewed {
+  transform: skewX(15deg);
+  margin-left: -15px;
+}
+
+.unskewed-content {
+  left: -50px;
+  transform: skewX(-15deg);
+}
+
+#image {
+  background-image: url(https://cdn-icons.flaticon.com/png/512/924/premium/924915.png?token=exp=1652356670~hmac=9dd2de506bfb8f8dfe62ce9df9b1964b);
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+
+#info-div {
+  position: absolute;
+  background: black;
+  overflow-y: auto;
+  left: 0%;
+  right: 20%;
+  height: 100%;
+}
+
+#info {
+  color: rgb(0, 255, 0);
+  font-size: large;
+  font-weight: bold;
+  white-space: break-space;
+  padding: 20px 40px;
+}
+
+#padding {
+  position: absolute;
+  background: white;
+  left: 70%;
+  width: 30px;
+  height: 100%;
+}
+
+#image-div {
+  position: absolute;
+  background: teal;
+  left: calc(70% + 30px);
+  right: -20%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#top-div {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
