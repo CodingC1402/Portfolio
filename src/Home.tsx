@@ -1,6 +1,5 @@
 import { Theme } from "@emotion/react";
-import { AppBar, Button, Container, Link, SxProps, Toolbar, Typography } from "@mui/material";
-import { hover } from "@testing-library/user-event/dist/hover";
+import { AppBar, Button, SxProps, Toolbar, Typography } from "@mui/material";
 import * as React from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import "./Home.css";
@@ -64,7 +63,7 @@ export default function Home(props: IHomeProps) {
             <img
               id="app-bar-image"
               src="https://cdn-icons.flaticon.com/png/512/924/premium/924915.png?token=exp=1652356670~hmac=9dd2de506bfb8f8dfe62ce9df9b1964b"
-              alt="image"
+              alt="profile"
             />
             <Typography variant="h6" fontWeight={"bold"} color="inherit">
               Phạm Phúc Nguyên

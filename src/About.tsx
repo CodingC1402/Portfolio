@@ -1,4 +1,4 @@
-import { Button, Container, Paper } from "@mui/material";
+import { Container, Paper } from "@mui/material";
 import * as React from "react";
 import "./About.css";
 import ClearIcon from "@mui/icons-material/Clear";
@@ -11,9 +11,9 @@ import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
 export interface IAboutProps {}
 
 export default function About(props: IAboutProps) {
-  let birthDate = new Date(2001, 2, 14);
-  let today = new Date();
-  let yearOld = today.getFullYear() - birthDate.getFullYear();
+  //let birthDate = new Date(2001, 2, 14);
+  //let today = new Date();
+  //let yearOld = today.getFullYear() - birthDate.getFullYear();
 
   const fakeBtnStyle = {
     width: "27px",
