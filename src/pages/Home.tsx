@@ -7,7 +7,6 @@ import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import "./Home.css";
 import {default as VnIcon} from "../resources/languages-icons/Vn.png";
 import {default as EnIcon} from "../resources/languages-icons/En.png";
-import { default as Profile } from "../resources/Profile.png";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
