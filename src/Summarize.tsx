@@ -118,7 +118,7 @@ export default function Summarize(props: ISummarizeProps) {
         </div>
       </div>
       <div style={pattern}/>
-      <img src="https://cdn-icons.flaticon.com/png/512/924/premium/924915.png?token=exp=1652356670~hmac=9dd2de506bfb8f8dfe62ce9df9b1964b" style={profileImage}/>
+      <img src="https://cdn-icons.flaticon.com/png/512/924/premium/924915.png?token=exp=1652356670~hmac=9dd2de506bfb8f8dfe62ce9df9b1964b" style={profileImage} alt="profile"/>
       <div style={infoDiv}>
         <h1>PHẠM PHÚC NGUYÊN</h1>
         <h3 style={{margin: "-20px"}}>Software engineer • Game developer</h3>
