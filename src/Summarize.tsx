@@ -98,22 +98,22 @@ export default function Summarize(props: ISummarizeProps) {
               left: "-35px",
             }}
           >
-            <img style={imageStyle} src={Background2} />
+            <img style={imageStyle} src={Background2} alt="background2" />
           </div>
           <div style={imageDiv}>
-            <img style={imageStyle} src={Background} />
+            <img style={imageStyle} src={Background} alt="background" />
           </div>
           <div style={imageDiv}>
-            <img style={imageStyle} src={Background4} />
+            <img style={imageStyle} src={Background4} alt="background4" />
           </div>
           <div style={imageDiv}>
-            <img style={imageStyle} src={Background3} />
+            <img style={imageStyle} src={Background3} alt="background3" />
           </div>
           <div style={imageDiv}>
-            <img style={imageStyle} src={Background5} />
+            <img style={imageStyle} src={Background5} alt="background5" />
           </div>
           <div style={imageDiv}>
-            <img style={imageStyle} src={Background6} />
+            <img style={imageStyle} src={Background6} alt="background6" />
           </div>
         </div>
       </div>

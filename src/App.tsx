@@ -1,5 +1,5 @@
 import { ThemeProvider } from '@emotion/react';
-import { colors, createTheme, CssBaseline, ThemeOptions, useMediaQuery } from '@mui/material';
+import { createTheme, CssBaseline, useMediaQuery } from '@mui/material';
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import About from './About';
