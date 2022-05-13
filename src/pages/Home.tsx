@@ -1,7 +1,6 @@
 import { Theme } from "@emotion/react";
 import {
   AppBar,
-  Box,
   Button,
   Collapse,
   FormControlLabel,

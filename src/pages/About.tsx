@@ -1,4 +1,4 @@
-import { Container, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import * as React from "react";
 import "./About.css";
 import ClearIcon from "@mui/icons-material/Clear";
