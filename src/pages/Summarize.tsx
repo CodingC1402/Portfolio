@@ -23,7 +23,7 @@ export default function Summarize(props: ISummarizeProps) {
 
   const backgroundStyle: React.CSSProperties = {
     width: "100%",
-    height: "250px",
+    height: "35vw",
     overflow: "hidden",
   };
 
@@ -53,7 +53,7 @@ export default function Summarize(props: ISummarizeProps) {
     borderRadius: "50%",
     position: "absolute",
     left: "calc(50% - 100px - 4px)",
-    top: "calc(250px - 100px - 4px)",
+    top: "calc(min(35vw, 250px) - 100px - 4px)",
     background: "teal",
     backgroundImage: `url(${Profile})`,
     backgroundSize: "contain",
@@ -68,7 +68,7 @@ export default function Summarize(props: ISummarizeProps) {
     flexDirection: "column",
     width: "100vw",
     position: "absolute",
-    top: "calc(250px + 130px)",
+    top: "calc(min(35vw, 250px) + 110px)",
     height: "calc(100% - 450px)",
     alignItems: "center"
   }
@@ -140,8 +140,8 @@ export default function Summarize(props: ISummarizeProps) {
         <h5 className="d-block d-md-none">{lang("profession")}</h5>
         <div style={{display: "grid", flexDirection: "column", alignItems: "center", justifyItems: "center", flexGrow: "1"}}>
           <Paper sx={{margin: "25px", padding: "20px", width: "80vw", fontWeight: "plain", fontStyle: "italic", textAlign: "center", boxShadow: "0px 0px 10px rgba{0, 0, 0, 0.5}"}}>
-            "That's the thing about people who think they hate computers. What they really hate is lousy programmers."<br/>
-            <b>Larry Niven</b>
+            {lang("randomQuotes")}<br/>
+            <b>{lang("randomQuotesAuthor")}</b>
           </Paper>
         </div>
       </div>

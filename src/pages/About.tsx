@@ -7,10 +7,13 @@ import CropSquareIcon from "@mui/icons-material/CropSquare";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
+import TerminalLog from "../components/TerminalLog";
+import { useTranslation } from "react-i18next";
 
 export interface IAboutProps {}
 
 export default function About(props: IAboutProps) {
+  const [lang] = useTranslation();
   //let birthDate = new Date(2001, 2, 14);
   //let today = new Date();
   //let yearOld = today.getFullYear() - birthDate.getFullYear();
@@ -102,8 +105,12 @@ export default function About(props: IAboutProps) {
               ></AddBoxOutlinedIcon>
             </div>
           </div>
-          <div style={{position: "absolute", background: "rgb(53, 5, 38)", top: "40px", width: "100%", height: "calc(100% - 40px)"}}>
-
+          <div style={{position: "relative", background: "rgb(53, 5, 38)", top: "40px", width: "100%", height: "calc(100% - 40px)", overflow: "auto"}}>
+              <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.information.title", {returnObjects: true})} results={lang("aboutContents.information.content", {returnObjects: true})}/>
+              <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.education.title", {returnObjects: true})} results={lang("aboutContents.education.content", {returnObjects: true})}/>
+              <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.strength.title", {returnObjects: true})} results={lang("aboutContents.strength.content", {returnObjects: true})}/>
+              <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.weakness.title", {returnObjects: true})} results={lang("aboutContents.weakness.content", {returnObjects: true})}/>
+              <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.hobbies.title", {returnObjects: true})} results={lang("aboutContents.hobbies.content", {returnObjects: true})}/>
           </div>
         </Paper>
       </div>

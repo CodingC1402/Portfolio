@@ -1,0 +1,23 @@
+#top-div {
+  font-weight: bolder;
+  margin-left: 5px;
+  font-size: larger;
+  font-family: monospace;
+  color: white;
+}
+
+#root-command {
+  color: rgb(0, 187, 0);
+}
+
+#root-command-squiggly {
+  color: rgb(83, 168, 221);
+}
+
+#root-command-after {
+  color: white;
+}
+
+.row-span::before {
+  content: "| ";
+}

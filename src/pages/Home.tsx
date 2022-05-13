@@ -205,7 +205,6 @@ export default function Home(props: IHomeProps) {
         style={{
           background: "rgb(39, 39, 39)",
           position: "absolute",
-          paddingLeft: "17px",
           width: "100%",
         }}
       >
