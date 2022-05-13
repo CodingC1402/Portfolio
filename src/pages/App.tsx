@@ -9,7 +9,7 @@ import Projects from './Projects';
 import Summarize from './Summarize';
 
 function App() {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  //const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
 
   const theme = React.useMemo(
     () =>
@@ -18,7 +18,7 @@ function App() {
           mode: /**prefersDarkMode ? 'dark' : 'light'*/ "dark",
         },
       }),
-    [prefersDarkMode],
+    [/**prefersDarkMode*/],
   );
 
   return (
