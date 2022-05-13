@@ -139,7 +139,7 @@ export default function Summarize(props: ISummarizeProps) {
         <h4 className="d-none d-md-block">{lang("profession")}</h4>
         <h5 className="d-block d-md-none">{lang("profession")}</h5>
         <div style={{display: "grid", flexDirection: "column", alignItems: "center", justifyItems: "center", flexGrow: "1"}}>
-          <Paper sx={{margin: "25px", padding: "20px", width: "70vw", fontWeight: "plain", fontStyle: "italic", textAlign: "center", boxShadow: "0px 0px 10px rgba{0, 0, 0, 0.5}"}}>
+          <Paper sx={{margin: "25px", padding: "20px", width: "80vw", fontWeight: "plain", fontStyle: "italic", textAlign: "center", boxShadow: "0px 0px 10px rgba{0, 0, 0, 0.5}"}}>
             "That's the thing about people who think they hate computers. What they really hate is lousy programmers."<br/>
             <b>Larry Niven</b>
           </Paper>
