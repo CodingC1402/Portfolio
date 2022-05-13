@@ -7,7 +7,7 @@ import
 }
 
 #background {
-  background-image: url(./resources/Pattern1.png);
+  background-image: url(../resources/Pattern1.png);
   background-size: contain;
   background-repeat: repeat-x;
   opacity: 0.02;

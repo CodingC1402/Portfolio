@@ -1,16 +1,20 @@
 import * as React from "react";
-import { default as Background } from "./resources/SummarizeBackground.jpg";
-import { default as Background2 } from "./resources/SummarizeBackground2.jpg";
-import { default as Background3 } from "./resources/SummarizeBackground3.jpg";
-import { default as Background4 } from "./resources/SummarizeBackground4.jpg";
-import { default as Background5 } from "./resources/SummarizeBackground5.jpg";
-import { default as Background6 } from "./resources/SummarizeBackground6.jpg";
-import { default as Pattern1 } from "./resources/Pattern1.png";
+import { default as Background } from  "../resources/SummarizeBackground.jpg";
+import { default as Background2 } from "../resources/SummarizeBackground2.jpg";
+import { default as Background3 } from "../resources/SummarizeBackground3.jpg";
+import { default as Background4 } from "../resources/SummarizeBackground4.jpg";
+import { default as Background5 } from "../resources/SummarizeBackground5.jpg";
+import { default as Background6 } from "../resources/SummarizeBackground6.jpg";
+import { default as Pattern1 } from "../resources/Pattern1.png";
+import { default as Profile } from "../resources/Profile.png";
 import { Paper } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 export interface ISummarizeProps {}
 
 export default function Summarize(props: ISummarizeProps) {
+  const [lang] = useTranslation();
+
   const topDivStyle: React.CSSProperties = {
     width: "100%",
     height: "100%",
@@ -51,18 +55,23 @@ export default function Summarize(props: ISummarizeProps) {
     left: "calc(50% - 125px - 4px)",
     top: "calc(250px - 125px - 4px)",
     background: "teal",
+    backgroundImage: `url(${Profile})`,
+    backgroundSize: "contain",
+    backgroundPosition: "center",
     width: "250px",
     height: "250px",
     border: "8px solid white"
   }
 
   const infoDiv: React.CSSProperties = {
-    display: "grid",
+    display: "flex",
+    flexDirection: "column",
     width: "500px",
     position: "absolute",
     left: "calc(50% - 250px)",
     top: "calc(250px + 130px)",
-    justifyItems: "center"
+    height: "calc(100% - 450px)",
+    alignItems: "center"
   }
 
   const footerDiv: React.CSSProperties = {
@@ -118,14 +127,16 @@ export default function Summarize(props: ISummarizeProps) {
         </div>
       </div>
       <div style={pattern}/>
-      <img src="https://cdn-icons.flaticon.com/png/512/924/premium/924915.png?token=exp=1652356670~hmac=9dd2de506bfb8f8dfe62ce9df9b1964b" style={profileImage} alt="profile"/>
+      <div style={profileImage}/>
       <div style={infoDiv}>
-        <h1>PHẠM PHÚC NGUYÊN</h1>
-        <h3 style={{margin: "-20px"}}>Software engineer • Game developer</h3>
-        <Paper sx={{margin: "25px", padding: "20px", fontWeight: "plain", fontStyle: "italic", textAlign: "center", boxShadow: "0px 0px 10px rgba{0, 0, 0, 0.5}"}}>
-          "That's the thing about people who think they hate computers. What they really hate is lousy programmers."<br/>
-          <b>Larry Niven</b>
-        </Paper>
+        <h1>{lang("name")}</h1>
+        <h3 style={{margin: "-20px"}}>{lang("profession")}</h3>
+        <div style={{display: "grid", flexDirection: "column", alignItems: "center", justifyItems: "center", flexGrow: "1"}}>
+          <Paper sx={{margin: "25px", padding: "20px", fontWeight: "plain", fontStyle: "italic", textAlign: "center", boxShadow: "0px 0px 10px rgba{0, 0, 0, 0.5}"}}>
+            "That's the thing about people who think they hate computers. What they really hate is lousy programmers."<br/>
+            <b>Larry Niven</b>
+          </Paper>
+        </div>
       </div>
       <div style={footerDiv}>
         +84938416869 | 19521918@gm.uit.edu.vn | CornyCodingCorn@gmail.com

@@ -8,17 +8,15 @@
       "type": "firefox",
       "request": "launch",
       "reAttach": true,
-      "preLaunchTask": "npm: start",
-      "name": "Launch localhost",
+      "name": "firefox",
       "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
       "pathMappings": [
         {
-          "url": "",
-          "path": "${workspaceFolder}"
+          "url": "file:///E:/Project/Portfolio/src/index.tsx",
+          "path": "${workspaceFolder}/pages/index.tsx"
         }
-      ],
-      "webRoot": "${workspaceFolder}"
+      ]
     }
-
   ]
 }
