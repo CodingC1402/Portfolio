@@ -1,47 +1,110 @@
-import * as React from 'react';
-import "./About.css"
+import { Button, Container, Paper } from "@mui/material";
+import * as React from "react";
+import "./About.css";
+import ClearIcon from "@mui/icons-material/Clear";
+import MinimizeIcon from "@mui/icons-material/Minimize";
+import CropSquareIcon from "@mui/icons-material/CropSquare";
+import SearchIcon from "@mui/icons-material/Search";
+import MenuIcon from "@mui/icons-material/Menu";
+import AddBoxOutlinedIcon from "@mui/icons-material/AddBoxOutlined";
 
-export interface IAboutProps {
-}
+export interface IAboutProps {}
 
-export default function About (props: IAboutProps) {
+export default function About(props: IAboutProps) {
   let birthDate = new Date(2001, 2, 14);
   let today = new Date();
   let yearOld = today.getFullYear() - birthDate.getFullYear();
 
-  return (
-    <div id='top-div'>
-      <div id="info-div">
-        <div id="info">
-          $ Thông tin -list<br/>
-          - Phạm Phúc Nguyên<br/>
-          - Sinh ngày 14/02/2001<br/>
-          - <span>{yearOld}</span> tuổi<br/>
-          <br/>
-          $ Thông tin học vấn -list<br/>
-          - Đại học:<br/>
-          &nbsp; |_ Sinh viên năm 3 trường Đại học công nghệ thông tin Tp.HCM(UIT)<br/>
-          &nbsp; |_ Chuyên ngành Kỹ thuật phần mềm<br/>
-          &nbsp; |_ Dự kiến tốt nghiệm đầu nằm 2023<br/>
-          &nbsp; |_ Điểm trung bình tích lũy: 8.46 / 10<br/>
-          - Trung học phổ thông:<br/>
-          &nbsp; |_ Trường THPT Lương Thế Vinh Quận 1.<br/>
-          &nbsp; |_ Tốt nghiệm loại giỏi.<br/>
-          <br/>
-          $ Mục tiêu nghề nghiệp -list<br/>
+  const fakeBtnStyle = {
+    width: "27px",
+    height: "27px",
+    background: "rgb(72, 72, 72)",
+    boxShadow: "0px 2px 3px rgba(9,0,0,0.5)",
+    borderRadius: "3px",
+    marginRight: "20px",
+    display: "grid",
+    justifyItems: "center",
+    alignItems: "center",
+  };
 
-          <br/>
-          $ Sở thích -list<br/>
-          - Lập trình.<br/>
-          - Tìm hiểu các công nghệ mới.<br/>
-          - Nghe nhạc.<br/>
-          - Vẽ tranh.<br/>
-        </div>
-      </div>
-      <div id="padding" className='skewed'/>
-      <div id="image-div" className='skewed'>
-        <div id="image" className='unskewed-content'/>
-      </div>
-    </div>
+  const fakeSysBtnStyle = {
+    width: "20px",
+    height: "20px",
+    marginRight: "20px",
+    display: "grid",
+    justifyItems: "center",
+    alignItems: "end",
+  }
+
+  return (
+    <React.Fragment>
+      <div id="background" />
+      <Container
+        sx={{
+          justifyContent: "center",
+          display: "flex",
+          padding: "30px",
+          position: "relative",
+          height: "100%",
+        }}
+      >
+        <Paper sx={{ width: "80%", height: "250px", position: "absolute" }}>
+          <div id="terminal-top-bar">
+            <div
+              style={{
+                width: "20px",
+                height: "20px",
+                marginRight: "15px",
+                borderRadius: "20px",
+                background: "rgb(240, 60, 1)",
+                display: "grid",
+                justifyItems: "center",
+                alignItems: "center",
+              }}
+            >
+              <ClearIcon
+                htmlColor="white"
+                sx={{ width: "15px", height: "15px" }}
+              ></ClearIcon>
+            </div>
+            <div
+              style={fakeSysBtnStyle}
+            >
+              <CropSquareIcon
+                htmlColor="white"
+                sx={{ width: "15px", height: "15px" }}
+              ></CropSquareIcon>
+            </div>
+            <div
+              style={fakeSysBtnStyle}
+            >
+              <MinimizeIcon
+                htmlColor="white"
+                sx={{ width: "15px", height: "15px" }}
+              ></MinimizeIcon>
+            </div>
+            <div style={fakeBtnStyle}>
+              <MenuIcon
+                htmlColor="white"
+                sx={{ width: "20px", height: "20px", marginTop: "3px" }}
+              ></MenuIcon>
+            </div>
+            <div style={fakeBtnStyle}>
+              <SearchIcon
+                htmlColor="white"
+                sx={{ width: "23px", height: "23px", marginTop: "3px" }}
+              ></SearchIcon>
+            </div>
+            <div id="name-div">nguyen@nguyen-pc:~</div>
+            <div style={{ ...fakeBtnStyle, marginLeft: "15px" }}>
+              <AddBoxOutlinedIcon
+                htmlColor="white"
+                sx={{ width: "23px", height: "23px", marginTop: "3px" }}
+              ></AddBoxOutlinedIcon>
+            </div>
+          </div>
+        </Paper>
+      </Container>
+    </React.Fragment>
   );
 }

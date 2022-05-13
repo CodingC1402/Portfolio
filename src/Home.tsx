@@ -78,7 +78,7 @@ export default function Home(props: IHomeProps) {
           </div>
         </Toolbar>
       </AppBar>
-      <div style={{height: "calc(100% - 64px)"}}>
+      <div style={{height: "calc(100% - 64px)", position: "absolute", top: "64px", width: "100vw"}}>
         <Outlet/>
       </div>
     </>
