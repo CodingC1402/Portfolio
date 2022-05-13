@@ -39,16 +39,15 @@ export default function About(props: IAboutProps) {
   return (
     <React.Fragment>
       <div id="background" />
-      <Container
-        sx={{
+      <div className="mx-0 mx-md-5" style={{
           justifyContent: "center",
           display: "flex",
-          padding: "30px",
+          paddingTop: "30px",
+          paddingBottom: "30px",
           position: "relative",
           height: "100%",
-        }}
-      >
-        <Paper sx={{ width: "80%", height: "250px", position: "absolute" }}>
+        }}>
+        <Paper sx={{ width: "100%", minHeight: "250px", position: "relative", overflow: "hidden" }}>
           <div id="terminal-top-bar">
             <div
               style={{
@@ -95,7 +94,7 @@ export default function About(props: IAboutProps) {
                 sx={{ width: "23px", height: "23px", marginTop: "3px" }}
               ></SearchIcon>
             </div>
-            <div id="name-div">nguyen@nguyen-pc:~</div>
+            <div id="name-div" style={{textOverflow: "clip"}}>nguyen@nguyen-pc:~</div>
             <div style={{ ...fakeBtnStyle, marginLeft: "15px" }}>
               <AddBoxOutlinedIcon
                 htmlColor="white"
@@ -103,8 +102,11 @@ export default function About(props: IAboutProps) {
               ></AddBoxOutlinedIcon>
             </div>
           </div>
+          <div style={{position: "absolute", background: "rgb(53, 5, 38)", top: "40px", width: "100%", height: "calc(100% - 40px)"}}>
+
+          </div>
         </Paper>
-      </Container>
+      </div>
     </React.Fragment>
   );
 }

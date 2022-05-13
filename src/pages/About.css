@@ -9,7 +9,7 @@ import
 #background {
   background-image: url(../resources/Pattern1.png);
   background-size: contain;
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   opacity: 0.02;
   position: absolute;
   top: 0px;

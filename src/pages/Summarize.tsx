@@ -52,23 +52,22 @@ export default function Summarize(props: ISummarizeProps) {
   const profileImage: React.CSSProperties = {
     borderRadius: "50%",
     position: "absolute",
-    left: "calc(50% - 125px - 4px)",
-    top: "calc(250px - 125px - 4px)",
+    left: "calc(50% - 100px - 4px)",
+    top: "calc(250px - 100px - 4px)",
     background: "teal",
     backgroundImage: `url(${Profile})`,
     backgroundSize: "contain",
     backgroundPosition: "center",
-    width: "250px",
-    height: "250px",
+    width: "200px",
+    height: "200px",
     border: "8px solid white"
   }
 
   const infoDiv: React.CSSProperties = {
     display: "flex",
     flexDirection: "column",
-    width: "500px",
+    width: "100vw",
     position: "absolute",
-    left: "calc(50% - 250px)",
     top: "calc(250px + 130px)",
     height: "calc(100% - 450px)",
     alignItems: "center"
@@ -76,14 +75,21 @@ export default function Summarize(props: ISummarizeProps) {
 
   const footerDiv: React.CSSProperties = {
     position: "absolute",
-    display: "grid",
-    justifyItems: "center",
-    alignItems: "center",
     bottom: "0px",
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "center",
+    flexFlow: "wrap",
+    alignItems: "center",
     height: "60px",
     width: "100%",
     boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.4)",
-    background: "rgb(38, 38,38)"
+    background: "rgb(38, 38,38)",
+  }
+
+  const infoSpan: React.CSSProperties = {
+    marginLeft: "10px",
+    marginRight: "10px"
   }
 
   const pattern: React.CSSProperties = {
@@ -130,16 +136,19 @@ export default function Summarize(props: ISummarizeProps) {
       <div style={profileImage}/>
       <div style={infoDiv}>
         <h1>{lang("name")}</h1>
-        <h3 style={{margin: "-20px"}}>{lang("profession")}</h3>
+        <h4 className="d-none d-md-block">{lang("profession")}</h4>
+        <h5 className="d-block d-md-none">{lang("profession")}</h5>
         <div style={{display: "grid", flexDirection: "column", alignItems: "center", justifyItems: "center", flexGrow: "1"}}>
-          <Paper sx={{margin: "25px", padding: "20px", fontWeight: "plain", fontStyle: "italic", textAlign: "center", boxShadow: "0px 0px 10px rgba{0, 0, 0, 0.5}"}}>
+          <Paper sx={{margin: "25px", padding: "20px", width: "70vw", fontWeight: "plain", fontStyle: "italic", textAlign: "center", boxShadow: "0px 0px 10px rgba{0, 0, 0, 0.5}"}}>
             "That's the thing about people who think they hate computers. What they really hate is lousy programmers."<br/>
             <b>Larry Niven</b>
           </Paper>
         </div>
       </div>
-      <div style={footerDiv}>
-        +84938416869 | 19521918@gm.uit.edu.vn | CornyCodingCorn@gmail.com
+      <div className="" style={footerDiv}>
+        <span style={infoSpan}>+84938416869</span>
+        <span style={infoSpan}>19521918@gm.uit.edu.vn</span>
+        <span style={infoSpan}>CornyCodingCorn@gmail.com</span>
       </div>
     </div>
   );
