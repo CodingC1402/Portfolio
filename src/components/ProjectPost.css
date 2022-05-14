@@ -3,6 +3,8 @@
   display: flex;
   flex-direction: row;
   min-height: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 #post-time-stamp-div {
