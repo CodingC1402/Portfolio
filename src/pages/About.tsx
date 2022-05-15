@@ -107,6 +107,7 @@ export default function About(props: IAboutProps) {
           </div>
           <div style={{position: "relative", background: "rgb(53, 5, 38)", top: "40px", width: "100%", height: "calc(100% - 40px)", overflow: "auto"}}>
               <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.information.title", {returnObjects: true})} results={lang("aboutContents.information.content", {returnObjects: true})}/>
+              <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.skills.title", {returnObjects: true})} results={lang("aboutContents.skills.content", {returnObjects: true})}/>
               <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.education.title", {returnObjects: true})} results={lang("aboutContents.education.content", {returnObjects: true})}/>
               <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.strength.title", {returnObjects: true})} results={lang("aboutContents.strength.content", {returnObjects: true})}/>
               <TerminalLog root="nguyen@nguyen-pc" query={lang("aboutContents.weakness.title", {returnObjects: true})} results={lang("aboutContents.weakness.content", {returnObjects: true})}/>

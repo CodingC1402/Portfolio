@@ -36,6 +36,7 @@ export interface ILangTemplate {
 
   aboutContents: {
     information: IAboutContents,
+    skills: IAboutContents,
     strength: IAboutContents
     weakness: IAboutContents
     education: IAboutContents

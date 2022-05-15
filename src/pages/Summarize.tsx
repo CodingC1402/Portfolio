@@ -81,7 +81,7 @@ export default function Summarize(props: ISummarizeProps) {
     justifyContent: "center",
     flexFlow: "wrap",
     alignItems: "center",
-    height: "60px",
+    minHeight: "60px",
     width: "100%",
     boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.4)",
     background: "rgb(38, 38,38)",

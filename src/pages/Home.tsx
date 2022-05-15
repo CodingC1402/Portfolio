@@ -78,7 +78,7 @@ export default function Home(props: IHomeProps) {
   const navigate = useNavigate();
   const location = useLocation();
   const [isEnglish, setIsEnglish] = React.useState(
-    i18n.language === "en-US" || i18n.language === "en-UK"
+    !(i18n.language === "vn")
   );
   const [open, setOpen] = React.useState(false);
 
@@ -204,6 +204,7 @@ export default function Home(props: IHomeProps) {
       <div
         className="d-block d-md-none"
         style={{
+          zIndex: "2",
           background: "rgb(39, 39, 39)",
           position: "absolute",
           width: "100%",

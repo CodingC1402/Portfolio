@@ -30,6 +30,15 @@ export const vnLang: ILangTemplate = {
         "Quốc tịch: Việt Nam"
       ]
     },
+    skills: {
+      title: "skills -list",
+      content: [
+        "<span style='color: cyan'>Ngôn ngữ chính: C#, MySQL, Typescript</span>",
+        "Ngôn ngữ biết sử dụng: C++, Java, JavaScript",
+        "<span style='color: cyan'>Công nghệ chính: Unity, Cocos Creator, Wpf, Winform, MySQL</span>",
+        "Công nghệ biết sử dụng: Spring boot, ReactJS, NodeJS, DirectX, MongoDB, MS SQL"
+      ]
+    },
     strength: {
       title: "strength -list",
       content: [
@@ -130,7 +139,7 @@ export const vnLang: ILangTemplate = {
       descriptions: [
         "Một game mobile xây dựng dựa trên việc người chơi vượt qua các chướng ngại vật",
         "Lấy cảm hứng từ \"Rocket jump\" trong game Team fortress 2",
-        "Game nói về việc một khối xuông dùng các vụ nổ để đi đến đích"
+        "Game nói về việc một khối vuông dùng các vụ nổ để đi đến đích"
       ]
     }
   ]

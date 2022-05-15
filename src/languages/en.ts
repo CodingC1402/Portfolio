@@ -30,6 +30,15 @@ export const enLang: ILangTemplate = {
         "Nationality: Viet Nam"
       ]
     },
+    skills: {
+      title: "skills -list",
+      content: [
+        "<span style='color: cyan'>Main languages: C#, MySQL, Typescript</span>",
+        "Known languages: C++, Java, JavaScript",
+        "<span style='color: cyan'>Main technologies: Unity, Cocos Creator, Wpf, Winform, MySQL</span>",
+        "Known technologies: Spring boot, ReactJS, NodeJS, DirectX, MongoDB, MS SQL"
+      ]
+    },
     strength: {
       title: "strength -list",
       content: [

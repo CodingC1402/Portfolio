@@ -1,6 +1,7 @@
 import { ThemeProvider } from "@emotion/react";
 import { createTheme, CssBaseline, /**useMediaQuery*/ } from "@mui/material";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./About";
 import Goals from "./Goals";
@@ -10,6 +11,7 @@ import Summarize from "./Summarize";
 
 function App() {
   //const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
+  useTranslation();
 
   const theme = React.useMemo(
     () =>
