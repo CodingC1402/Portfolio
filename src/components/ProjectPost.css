@@ -11,6 +11,7 @@
   display: grid;
   justify-items: center;
   align-items: center;
+  min-width: var(--time-line-width);
   width: var(--time-line-width);
 }
 
@@ -25,20 +26,30 @@
   border: 5px solid white;
 }
 
+#project-title {
+  font-weight: bold;
+}
+
 #pictures {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: auto;
+  min-height: 400px;
   height: 250px;
+  margin-left: 10px;
 }
-.project-images {
+.project-post-images {
+  background-image: url(../resources/projects-images/BlocketJumper_1.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  margin: 10px;
   flex-grow: 1;
 }
 
 #description {
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -57,7 +68,7 @@
 
   #pictures {
     flex-direction: column;
-    width: 30%;
+    min-width: 30%;
     height: auto;
   }
 }

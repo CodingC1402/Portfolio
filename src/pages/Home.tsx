@@ -192,6 +192,7 @@ export default function Home(props: IHomeProps) {
       </AppBar>
       <div
         style={{
+          minHeight: "500px",
           height: "calc(100% - 64px)",
           position: "absolute",
           top: "64px",

@@ -146,7 +146,7 @@ export default function Summarize(props: ISummarizeProps) {
         </div>
       </div>
       <div className="" style={footerDiv}>
-        <span style={infoSpan}>+84938416869</span>
+        <span style={infoSpan}>https://github.com/CodingC1402</span>
         <span style={infoSpan}>19521918@gm.uit.edu.vn</span>
         <span style={infoSpan}>CornyCodingCorn@gmail.com</span>
       </div>
